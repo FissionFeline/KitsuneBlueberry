@@ -5,6 +5,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
 }
 
 main_gradient {
@@ -56,4 +57,86 @@ main_gradient {
     border-radius: 5px;
     background-color: #c30101;
     color: #c30101;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .menu-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar.hidden {
+    left: -200px;
+}
+
+
+/* Main content */
+
+.main {
+    margin: 50px 0 0 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* Responsive behavior */
+
+@media (max-width: 800px) {
+    .navbar .menu-button {
+        display: inline-block;
+    }
+    .sidebar {
+        position: fixed;
+        top: 50px;
+        left: -200px;
+        width: 200px;
+        height: 100%;
+        background-color: #eee;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: left 0.2s;
+    }
+    .sidebar.visible {
+        left: 0;
+    }
+    .main {
+        margin: 50px 0 0 0;
+    }
 }
