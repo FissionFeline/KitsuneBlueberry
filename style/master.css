@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 body {
     background-image: linear-gradient( 45deg, hsl(38deg 95% 60%) 0%, hsl(25deg 100% 65%) 11%, hsl(10deg 93% 68%) 22%, hsl(354deg 73% 65%) 33%, hsl(338deg 52% 57%) 44%, hsl(320deg 34% 49%) 56%, hsl(288deg 27% 43%) 67%, hsl(251deg 27% 40%) 78%, hsl(219deg 44% 30%) 89%, hsl(202deg 100% 17%) 100%);
     height: 100vh;
@@ -6,6 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 main_gradient {
@@ -65,10 +67,9 @@ main_gradient {
     left: 0;
     width: 100%;
     height: 50px;
-    background-color: #333;
+    background-color: #003959;
     color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
@@ -83,6 +84,7 @@ main_gradient {
     display: none;
     background-color: transparent;
     border: none;
+    background-color: #3f3f3f;
     color: white;
     cursor: pointer;
     font-size: 1.2em;
@@ -95,9 +97,11 @@ main_gradient {
     position: fixed;
     top: 50px;
     left: 0;
-    width: 200px;
+    justify-content: center;
+    align-items: center;
+    width: auto;
     height: 100%;
-    background-color: #eee;
+    background-color: transparent;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -128,7 +132,7 @@ main_gradient {
         left: -200px;
         width: 200px;
         height: 100%;
-        background-color: #eee;
+        background-color: transparent;
         padding: 20px;
         box-sizing: border-box;
         transition: left 0.2s;
