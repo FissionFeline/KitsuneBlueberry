@@ -46,6 +46,7 @@ main_gradient {
     background-color: #f7716b;
     border-color: #f7716b;
     border: 1ch;
+    vertical-align: middle;
 }
 
 .references {
@@ -59,6 +60,10 @@ main_gradient {
     border-radius: 5px;
     background-color: #c30101;
     color: #c30101;
+}
+
+.sidebar_link {
+    vertical-align: middle;
 }
 
 .navbar {
@@ -95,6 +100,7 @@ main_gradient {
 /* Sidebar */
 
 .sidebar {
+    vertical-align: middle;
     position: fixed;
     top: 50px;
     left: 0;
