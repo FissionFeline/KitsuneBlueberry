@@ -109,7 +109,7 @@ main_gradient {
     width: auto;
     height: 100%;
     background-color: transparent;
-    padding: 20px;
+    padding: 100px;
     box-sizing: border-box;
 }
 
@@ -149,6 +149,13 @@ main_gradient {
         width: 100%;
         background-color: #003959;
         opacity: 0.9;
+    }
+    .button-nav {
+        background-color: #f7716b;
+        border-color: #f7716b;
+        border: 1ch;
+        vertical-align: middle;
+        opacity: 10;
     }
     .main {
         margin: 50px 0 0 0;
