@@ -72,7 +72,7 @@ main_gradient {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: auto;
     background-color: #003959;
     color: white;
     display: flex;
